@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function space() {
+
+		document.write("<br><br>");
+	}	
+
+	function write(x) {
+
+		document.write(x);
+		space();
+
+	}
+
+	var quantidadeDeCarbono1 = parseInt(prompt("Insira a quantidade de carbono do primeiro item."));
+	var quantidadeDeCarbono2 = parseInt(prompt("Insira a quantidade de carbono do segundo item."));
+
+	quantidadeDeCarbono2 = quantidadeDeCarbono2 + 2;
+
+	if(quantidadeDeCarbono1 == quantidadeDeCarbono2) {
+
+		write("Elas aparentam ser bem parecidas!");
+
+	} else {
+
+		write("São diferentes!");
+
+	}
+
+</script>

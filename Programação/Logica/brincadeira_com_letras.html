@@ -1,0 +1,35 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+	function space() {
+		document.write("<br><br>");
+
+	}
+
+	function write(x) {
+		document.write(x);
+		space()
+
+	}
+
+	function a(text) {
+		return "(" + text + ")";
+
+	}
+
+	function b(text) {
+		return "@" + text + "@";
+
+	}
+
+	function c(name, surname) {
+		return b(name + "" + a(surname));
+
+	}
+
+	var result = c("Flávio", "Almeida");
+
+	write(result)
+
+</script>

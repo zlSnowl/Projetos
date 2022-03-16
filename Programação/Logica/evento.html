@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function space() {
+
+		document.write("<br>");
+
+	}
+
+	function write(x) {
+
+		document.write(x);
+		space();
+
+	}
+
+	var totalDeEventos = parseInt(prompt("Informe o total de eventos."));
+	var contador = 1;
+	var totalGastosComEventos = 0;
+
+	while(contador <= totalDeEventos) {
+
+		var gastos = parseFloat(prompt("Informe o total de gastos com eventos"));
+		totalGastosComEventos = totalGastosComEventos + gastos;
+		contador++;
+
+	}
+
+		var media = totalGastosComEventos / totalDeEventos;
+
+		write("A media de gastos com eventos é " + media);
+		
+</script>

@@ -1,0 +1,73 @@
+
+<canvas width="1280" height="720"></canvas>
+
+<script>
+
+		var tela = document.querySelector("canvas");
+		var pincel = tela.getContext('2d');
+
+		pincel.fillStyle = 'PaleGoldenrod';
+		pincel.fillRect(0, 0, 600, 400);
+		
+		pincel.fillStyle = 'red';
+		pincel.fillRect(254, 0, 80, 400);
+		pincel.fillRect(0, 154, 600, 80);
+
+		pincel.fillStyle = 'Navy';
+		//lado esquerdo superior
+		pincel.beginPath();
+		pincel.moveTo(234, 122);
+		pincel.lineTo(18, 0);
+		pincel.lineTo(234, 0);
+		pincel.moveTo(0, 54);
+		pincel.lineTo(120, 124);
+		pincel.lineTo(0, 124);
+		//lado direito superior
+		pincel.moveTo(354, 122);
+		pincel.lineTo(582, 0);
+		pincel.lineTo(354, 0);
+		pincel.moveTo(600, 60);
+		pincel.lineTo(465, 124);
+		pincel.lineTo(600, 124);
+		//lado esquerdo inferior
+		pincel.moveTo(0, 264);
+		pincel.lineTo(120, 264);
+		pincel.lineTo(0, 334);
+		pincel.moveTo(234, 264);
+		pincel.lineTo(234, 400);
+		pincel.lineTo(18, 400);
+		//lado direito inferior 
+		pincel.moveTo(354, 264);
+		pincel.lineTo(354, 400);
+		pincel.lineTo(592, 400);
+		pincel.moveTo(465, 264);
+		pincel.lineTo(600, 264);
+		pincel.lineTo(600, 336);
+		pincel.fill();
+
+
+		pincel.fillStyle = 'red';
+		//lado esquerdo superior
+		pincel.beginPath();
+		pincel.moveTo(0, 17);
+		pincel.lineTo(178, 124);
+		pincel.lineTo(141, 124);
+		pincel.lineTo(0, 44);
+		//lado direito superior
+		pincel.moveTo(600, 5);
+		pincel.lineTo(370, 124);
+		pincel.lineTo(412, 124);
+		pincel.lineTo(600, 32);
+		//lado esquerdo inferior 
+		pincel.moveTo(0, 400);
+		pincel.lineTo(214, 264);
+		pincel.lineTo(174, 264);
+		pincel.lineTo(0, 370);
+		//lado direito inferior
+		pincel.moveTo(600, 350);
+		pincel.lineTo(600, 376);
+		pincel.lineTo(410, 264);
+		pincel.lineTo(450, 264);
+		pincel.fill();
+
+</script>

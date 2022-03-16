@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function space() {
+
+            document.write("<br><br>");
+    }
+
+    function write(x) {
+
+            document.write("<big>" + x + "</big>");
+            space();
+    }
+
+    function computeImc(peso, altura) {
+    		return imc = peso / (altura * altura);
+
+    }
+
+    var utilizaçãoDiaria = 1;
+
+    while(utilizaçãoDiaria <= 100) {
+
+
+    var name = prompt("Informe seu nome.");
+    var pesoInf = prompt(name+ ", informe seu peso."); 
+    var alturaInf = prompt(name+ ", informe sua altura."); 
+    
+    var imc = computeImc(pesoInf, alturaInf);
+
+        //write(name + ", seu imc é " + imc + ".");
+        alert(name + ", seu imc é " + imc + ".");
+
+    if(imc < 18.5) {
+        //write(name + ", seu IMC está abaixo da média recomendada pela OMS.")
+        alert(name + ", seu IMC está abaixo da média recomendada pela OMS.")
+    }
+
+    if(imc >= 18.5 && imc <= 24.9) {
+        //write(name + ", seu IMC está na média recomendada pela OMS." );
+        alert(name + ", seu IMC está na média recomendada pela OMS." );
+    }
+
+    if(imc > 24.9) {
+        //write(name + ", seu IMC está acima do padrão recomendado pela OMS.");
+        alert(name + ", seu IMC está acima do padrão recomendado pela OMS.");
+    }
+    
+     utilizaçãoDiaria = utilizaçãoDiaria + 1;
+
+    }
+</script>

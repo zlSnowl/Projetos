@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function space() {
+		document.write("<br><br>");
+
+	}
+
+	function write(x) {
+		document.write("<big>" + x + "</big>");
+		space();
+
+	}
+
+	var convidados = parseInt(prompt("Insira o número de convidados."));
+	var vips = parseInt(prompt("Insira o número de vips"));
+	var total = convidados + vips;
+
+	write("O total de convidados da festa é de " + total);
+
+</script>

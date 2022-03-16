@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function space() {
+
+		document.write("<br><br>");
+
+	}
+
+	function write(x) {
+
+		document.write(x);
+		space();
+
+	}
+
+	var sorteio = Math.round(Math.random() * 10);;
+	var tentativas = 1;
+
+	while(tentativas <= 3) {
+
+		var chute = parseInt(prompt("Escolha um número de 0 a 10"));
+
+		if(chute == sorteio) {
+
+			alert("Você ganhou!");
+			break;
+
+		} else {
+
+			alert("Você perdeu! O número era " + sorteio);
+			alert("Cry!");
+
+	      }
+
+		  tentativas++;
+	}
+</script>

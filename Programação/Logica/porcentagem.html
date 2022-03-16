@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function space() {
+
+		document.write("<br><br>");
+	}
+
+	function write(x) {
+
+		document.write("<big>" + x + "</big>");
+		space();
+
+	}
+
+	function computePercent(valor, total) {
+
+		return porcentagem = (valor / 100) * total;
+		
+	}
+	//var utilizaçãoDiaria = 1;
+
+	//while(utilizaçãoDiaria <= 100) {
+
+	var valorInf = parseInt(prompt("Informe a porcentagem desejada"));
+	var totalInf = parseInt(prompt("Informe o valor total"));
+	var porcentagem = computePercent(valorInf, totalInf);
+
+	write("O resultado desejado é " + porcentagem);
+	write("O valor foi atingido através da seguinte equação: (" + valorInf + "/100) *" + totalInf);
+	//alert(porcentagem);
+
+	utilizaçãoDiaria++;
+
+	//}
+
+</script>
+
+<img src= MEME2.jpg alt= meme>

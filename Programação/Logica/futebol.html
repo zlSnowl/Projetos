@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function space() {
+
+            document.write("<br><br>");
+    }
+
+    function write(x) {
+
+            document.write("<big>" + x + "</big>");
+            space();
+    }
+    var victory = parseInt(prompt("Insira o número de vitórias."));
+    var draw = parseInt(prompt("Insira o número de empates."));
+    var points = (victory * 3) + draw;
+
+    write("A pontuação do seu time é " + points);
+
+    if(points > 28) {
+        write("O seu time desempenhou melhor do que na última temporada.");
+
+    }
+
+    if(points < 28) {
+        write("O seu time desempenhou pior do que na última temporada.");
+
+    }
+
+    if(points == 28) {
+        write("O seu time desempenhou igual a última temporada.");
+    }
+</script>
